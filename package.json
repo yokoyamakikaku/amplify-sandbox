@@ -1,5 +1,6 @@
 {
   "name": "amplify-sandbox",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^3.5.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.3",
+    "aws-amplify": "^4.3.33",
+    "formik": "^2.2.9",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "18.7.14",

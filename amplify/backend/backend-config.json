@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifysandboxc2dc6e04": {
+    "amplifysandbox8848eb88": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -25,6 +25,12 @@
           "EMAIL"
         ]
       }
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation"
     }
   }
 }
