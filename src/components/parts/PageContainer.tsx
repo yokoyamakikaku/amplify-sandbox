@@ -6,7 +6,7 @@ type PageContainerProps = {
 
 } & PropsWithChildren
 
-const PageContainer: FC<PageContainer> = ({ children }) => {
+const PageContainer: FC<PageContainerProps> = ({ children }) => {
   return (
     <Container sx={{ py:4 }}>
       <Stack direction="column" spacing={4}>

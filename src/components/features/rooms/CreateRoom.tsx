@@ -46,7 +46,7 @@ const CreateRoom :FC<CreateRoomProps> = () => {
       <Snackbar
         open={isSucceeded} autoHideDuration={6000}
         message={t("room.create.is_succeeded")} />
-      {error?.errors?.map((error: { message: string }, index: numebr) => (
+      {error?.errors?.map((error: { message: string }, index: number) => (
         <Snackbar key={index} open autoHideDuration={6000} message={error?.message} />
       ))}
     </>

@@ -1,3 +1,4 @@
+import { FC } from "react"
 import { useTranslation } from "react-i18next"
 import TextField from "../../TextField"
 
@@ -5,7 +6,7 @@ export type RoomFormFieldsProps = {
 
 }
 
-const RoomFormFields: FC<Props> = () => {
+const RoomFormFields: FC<RoomFormFieldsProps> = () => {
   const { t } = useTranslation()
   return (
     <>
