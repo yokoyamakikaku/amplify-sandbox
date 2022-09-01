@@ -1,0 +1,16 @@
+{
+  "home": "ホーム",
+  "home.welcome": "ようこそ、{{name}}！",
+  "room": "教室",
+  "room.name": "教室名",
+  "room.create": "教室を作成する",
+  "room.no_room": "教室が一つもありません",
+  "open": "開く",
+  "room.list": "教室の一覧",
+  "room.creating": "教室の作成",
+  "room.create.is_succeeded": "教室を作成しました",
+  "user.settings": "ユーザ設定",
+  "user.name": "名前",
+  "save": "保存する",
+  "save.is_succeeded": "保存しました"
+}

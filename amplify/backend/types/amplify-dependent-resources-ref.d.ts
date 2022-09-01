@@ -17,5 +17,12 @@ export type AmplifyDependentResourcesAttributes = {
             "WebsiteURL": "string",
             "S3BucketSecureURL": "string"
         }
+    },
+    "api": {
+        "amplifysandbox": {
+            "GraphQLAPIKeyOutput": "string",
+            "GraphQLAPIIdOutput": "string",
+            "GraphQLAPIEndpointOutput": "string"
+        }
     }
 }
