@@ -1,4 +1,4 @@
-import { GetUserQuery, ListRoomsQuery, Room, User } from '@/API'
+import { CreateUserInput, GetUserQuery, UpdateUserInput, User } from '@/API'
 import { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 
@@ -33,7 +33,7 @@ export function useUser (userId?:string) {
 
 export function useCreateUserMutation () {
   return useMutation(async ({ user: { id, name} } : { user: { id: string, name: string }}) => {
-    const input = {
+    const input: CreateUserInput = {
       id,
       name
     }
@@ -43,7 +43,7 @@ export function useCreateUserMutation () {
 
 export function useUpdateUserMutation () {
   return useMutation(async ({ user: { id, name} } : { user: { id: string, name: string }}) => {
-    const input = {
+    const input: UpdateUserInput = {
       id,
       name
     }

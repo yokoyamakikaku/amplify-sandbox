@@ -1,4 +1,4 @@
-import { ListRoomsQuery, Room } from '@/API'
+import { CreateRoomInput, ListRoomsQuery, Room } from '@/API'
 import { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 
@@ -29,8 +29,9 @@ export function useCreateRoomMutation () {
   const user = useCurrentUser()
 
   return useMutation(async ({ room } : { room: { name: string }}) => {
-    const input = {
-      ...room,
+    const input: CreateRoomInput = {
+      id: null,
+      name: room.name,
       roomOwnerId: user?.username
     }
     await API.graphql(graphqlOperation(createRoom, { input })
